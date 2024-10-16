@@ -4,7 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        zad1();
+        zad2();
     }
 
     static void zad1()
@@ -20,20 +20,22 @@ class Program
         {
             Console.WriteLine(j);
             j++;
-        }
+        } 
+    }
 
-
+    static void zad2()
+    {
         Console.WriteLine("napisz zdanie");
         string zdanie = Console.ReadLine();
         int ilosc = 0;
-        
+
         foreach (char c in zdanie)
         {
-            if (c == 'b'| c == 'B')
-            ilosc++;
-            
+            if (c == 'b' | c == 'B')
+                ilosc++;
+
         }
-        if (ilosc == 1) 
+        if (ilosc == 1)
         {
             Console.WriteLine($"Zdanie ma {ilosc} litere b");
         }
@@ -41,7 +43,7 @@ class Program
         {
             Console.WriteLine("Zdanie nie posiada liter b");
         }
-        else if (ilosc <= 4) 
+        else if (ilosc <= 4)
         {
             Console.WriteLine($"Zdanie ma {ilosc} litery b");
         }
@@ -49,8 +51,5 @@ class Program
         {
             Console.WriteLine($"Zdanie ma {ilosc} liter b");
         }
-        
-        
-        
     }
 }
