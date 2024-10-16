@@ -12,5 +12,23 @@
         {
             Console.WriteLine(i);
         }
+
+        int j = 0;
+        while (j < 10)
+        {
+            Console.WriteLine(j);
+            j++;
+        }
+
+
+        Console.WriteLine("napisz zdanie");
+        string zdanie = Console.ReadLine();
+        int ilosc = 0;
+        foreach (char c in zdanie)
+        {
+            ilosc++;
+        }
+        Console.WriteLine($"Zdania ma {ilosc} liter");
+
     }
 }
