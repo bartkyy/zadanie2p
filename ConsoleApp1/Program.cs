@@ -29,6 +29,5 @@
             ilosc++;
         }
         Console.WriteLine($"Zdania ma {ilosc} liter");
-
     }
 }
