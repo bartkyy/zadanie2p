@@ -24,10 +24,12 @@
         Console.WriteLine("napisz zdanie");
         string zdanie = Console.ReadLine();
         int ilosc = 0;
+        
         foreach (char c in zdanie)
         {
+            if (c == 'b'| c == 'B')
             ilosc++;
         }
-        Console.WriteLine($"Zdania ma {ilosc} liter");
+        Console.WriteLine($"Zdanie ma {ilosc} litere b");
     }
 }
