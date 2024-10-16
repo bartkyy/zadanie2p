@@ -1,4 +1,6 @@
-﻿class Program
+﻿using System.ComponentModel.Design;
+
+class Program
 {
     static void Main(string[] args)
     {
@@ -29,7 +31,26 @@
         {
             if (c == 'b'| c == 'B')
             ilosc++;
+            
         }
-        Console.WriteLine($"Zdanie ma {ilosc} litere b");
+        if (ilosc == 1) 
+        {
+            Console.WriteLine($"Zdanie ma {ilosc} litere b");
+        }
+        else if (ilosc == 0)
+        {
+            Console.WriteLine("Zdanie nie posiada liter b");
+        }
+        else if (ilosc <= 4) 
+        {
+            Console.WriteLine($"Zdanie ma {ilosc} litery b");
+        }
+        else
+        {
+            Console.WriteLine($"Zdanie ma {ilosc} liter b");
+        }
+        
+        
+        
     }
 }
